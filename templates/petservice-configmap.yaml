@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: '{{.Values.microservices.petService.serviceName}}'
+data:
+  MYSQL_DATABASE: petdb
+  MYSQL_PASSWORD: test123
+  MYSQL_ROOT_PASSWORD: password
+  MYSQL_USER: testuser
+  SPRING_DATASOURCE_PASSWORD: dGVzdDEyMw==
+  SPRING_DATASOURCE_URL: jdbc:mysql://mysql/petdb
+  SPRING_DATASOURCE_USERNAME: testuser
+  SPRING_PROFILES_ACTIVE: k8s

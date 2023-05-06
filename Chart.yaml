@@ -1,4 +1,4 @@
 apiVersion: v2
-name: hipstershop-chart
+name: petclinic-chart
 version: 1.0.0
-description: A Helm chart for hipstershop application.
+description: A Helm chart for petclinic application.
